@@ -30,6 +30,13 @@ var x_vals = [5,5,10.2,5,7.6,6,12,10.8,6.2,5.8,4.6,6.8,5,4.6,3.8,14.2,5.2,6.2,5.
 var y_vals = [4.4,6.4,10,5,6.6,5.4,9,9.4,6,8.8,4.6,7.8,4.8,4.4,3.2,14.6,5.4,7.2,4.8,12]
 //Disclaimer: the numbers above are all divided by 5, so they can fit on the scope of the graph
 
+var xlabels = [];
+var ylabels = [];
+
+for (var i = 0; i < x_vals.length; i +=1){
+  xlabels.push(i*5);
+  xlabels.push(i*5);
+}
 
 for (var i = 0; i < x_vals.length; i +=1){
     console.log(i);
