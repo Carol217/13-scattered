@@ -46,7 +46,7 @@ for (var i = 0; i < x_vals.length; i +=1){
     svg.appendChild(c);
 }
 
-var labelsX = d3.select("svg").selectAll("text").data(x_vals)
+var labelsX = d3.select("svg").selectAll("text").data(xlabels)
 labelsX.append("text")
   .attr("x", function(d) { return  d[0] + 30; })
   .attr("y", function() { return 459; })
@@ -54,7 +54,7 @@ labelsX.append("text")
     return d[0] *5;
   });
 
-var labelsY = d3.select("svg").selectAll("text").data(y_vals)
+var labelsY = d3.select("svg").selectAll("text").data(ylabels)
 labelsY.append("text")
   .attr("x", function(d) { return 30; })
   .attr("y", function() { return d[0] + 105; })
